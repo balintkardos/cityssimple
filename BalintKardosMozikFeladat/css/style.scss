@@ -1,0 +1,250 @@
+body {
+    background: #374f75;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.warpper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+#res {
+    border-radius: 20px;
+    background: #153870;
+    padding: 0.5em;
+    display: grid;
+    justify-content: center;
+
+
+    .city {
+    display: flex;
+    margin: 0.3em;
+
+    .editcity {
+        margin-right: 2em;
+        width: 15em;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    button {
+        position: relative;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        height: 3em;
+    }
+
+    .del_btn {
+        background-color: #af4c4c;
+        border-radius: 25% 0% 0% 25%;
+
+        &:hover {
+            background-color: #b60404;
+            color: black;
+          }
+    }
+    .edit_btn { 
+        background-color: #4c72af;
+
+        &:hover {
+            background-color: #0042ad;
+            color: black;
+          }
+    }
+    .cancel_btn{
+        background-color: #bb9e1f;
+        border-radius: 0% 25% 25% 0%;
+
+        &:hover {
+            background-color: #f6ca06;
+            color: black;
+          }
+    }
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    h2 {
+        margin: 20px;
+    }
+}
+
+
+
+.new {
+   
+
+    input {
+        margin: 0 10px 0 10px ;
+    }
+
+    .ins_btn {
+        border-radius: 20px;
+        background-color: #5d8d51;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 22px;
+        padding: 20px;
+        transition: all 0.5s;
+        cursor: cell;
+        margin: 5px;
+      }
+      
+    .ins_btn span {
+        cursor: cell;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+      
+    .ins_btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+      
+    .ins_btn:hover span {
+        padding-right: 25px;
+    }
+      
+    .ins_btn:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+select {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 100%;
+    height: 50px;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: s-resize;
+    border-radius: 25px;
+    background-color: #2b456e;
+    border: none;
+    color: white;
+    padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+select::-ms-expand {
+    display: none; 
+}
+select:hover,
+select:focus {
+    color: white;
+    background-color: #153870;
+}
+select:hover ~ .select-icon,
+select:focus ~ .select-icon {
+  background-color: #153870;
+}
+
+input[type=text] {
+    width: 150px;
+    border-radius: 25px;
+    font-size: 25px;
+    background-color: #2b456e;
+    color: white;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 170px;
+    background-color: #153870;
+}
+
+.copyright {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 0 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 80%;
+
+    p{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .warpper{
+        flex-direction: column;
+
+        select {
+            width: 90%;
+            margin: 0;
+        }
+        .box {
+            flex-direction: column;
+        }
+        .right-header{
+            flex-direction: column;
+
+            h2 {
+                margin: 5px;
+            }
+        }
+        
+        
+
+        #res {
+            width: 90%;
+
+            .editcity {
+                width: 10em;
+            }
+        
+        }
+        .new {
+            h2{
+                margin-left: 10px;
+            }
+        }
+
+        input[type=text] {
+            width: 80px;
+        }
+        input[type=text]:focus {
+            width: 100px;
+        }
+    }
+}
+
+
+
+
+

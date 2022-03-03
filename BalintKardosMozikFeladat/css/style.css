@@ -1,0 +1,281 @@
+body {
+  background: #374f75;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.warpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#res {
+  border-radius: 20px;
+  background: #153870;
+  padding: 0.5em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#res .city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.3em;
+}
+
+#res .city .editcity {
+  margin-right: 2em;
+  width: 15em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#res .city button {
+  position: relative;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  height: 3em;
+}
+
+#res .city .del_btn {
+  background-color: #af4c4c;
+  border-radius: 25% 0% 0% 25%;
+}
+
+#res .city .del_btn:hover {
+  background-color: #b60404;
+  color: black;
+}
+
+#res .city .edit_btn {
+  background-color: #4c72af;
+}
+
+#res .city .edit_btn:hover {
+  background-color: #0042ad;
+  color: black;
+}
+
+#res .city .cancel_btn {
+  background-color: #bb9e1f;
+  border-radius: 0% 25% 25% 0%;
+}
+
+#res .city .cancel_btn:hover {
+  background-color: #f6ca06;
+  color: black;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.right-header h2 {
+  margin: 20px;
+}
+
+.new input {
+  margin: 0 10px 0 10px;
+}
+
+.new .ins_btn {
+  border-radius: 20px;
+  background-color: #5d8d51;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: cell;
+  margin: 5px;
+}
+
+.new .ins_btn span {
+  cursor: cell;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new .ins_btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.new .ins_btn:hover span {
+  padding-right: 25px;
+}
+
+.new .ins_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+select {
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 100%;
+  height: 50px;
+  font-size: 100%;
+  font-weight: bold;
+  cursor: s-resize;
+  border-radius: 25px;
+  background-color: #2b456e;
+  border: none;
+  color: white;
+  padding: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:hover,
+select:focus {
+  color: white;
+  background-color: #153870;
+}
+
+select:hover ~ .select-icon,
+select:focus ~ .select-icon {
+  background-color: #153870;
+}
+
+input[type=text] {
+  width: 150px;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: #2b456e;
+  color: white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 170px;
+  background-color: #153870;
+}
+
+.copyright {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem 0 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 80%;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 930px) {
+  .warpper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warpper select {
+    width: 90%;
+    margin: 0;
+  }
+  .warpper .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warpper .right-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warpper .right-header h2 {
+    margin: 5px;
+  }
+  .warpper #res {
+    width: 90%;
+  }
+  .warpper #res .editcity {
+    width: 10em;
+  }
+  .warpper .new h2 {
+    margin-left: 10px;
+  }
+  .warpper input[type=text] {
+    width: 80px;
+  }
+  .warpper input[type=text]:focus {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
