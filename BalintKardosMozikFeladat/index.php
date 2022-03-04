@@ -212,8 +212,6 @@
             }    
         });
         $(document).on('click', '#insert', function() {
-            console.log(document.getElementById('textbox_id').value);
-            console.log($(this).data("id3"));
             var inputid = $(this).data("id3");
             if (confirm("Are you sure you want to add this?")) {
                 $.ajax({
@@ -232,7 +230,6 @@
                             id: inputid,
                         },
                         success: function (response) {
-                            console.log("elvileg jónak kelle lennie");
                             $('#res').html(response);
                             
                         }
@@ -244,7 +241,6 @@
         $(document).on('blur', '.editcity', function() {
             editcityid = $(this).data("id1");
             editcityname = $(this).text();
-            console.log(editcityname);
         });
 
 
